@@ -4,14 +4,3 @@ allprojects {
     group = 'maow'
     version = '1.0.0'
 }
-
-archivesBaseName = 'xml-helpers-all'
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation project(':xml-helpers-dom')
-    implementation project(':xml-helpers-sax')
-}
