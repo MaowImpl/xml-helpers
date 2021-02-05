@@ -1,0 +1,9 @@
+archivesBaseName = 'xml-helpers-sax'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}

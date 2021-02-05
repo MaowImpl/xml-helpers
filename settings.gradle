@@ -1,0 +1,4 @@
+rootProject.name = 'xml-helpers'
+include 'xml-helpers-dom'
+include 'xml-helpers-sax'
+
