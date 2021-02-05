@@ -13,7 +13,7 @@ DOM depends on DOM4J and includes helpful wrapper classes for null-safe accessin
 It handles all null-checking for you to reduce if statements and make DOM manipulation easier to read.
 #### Example
 **XML**
-```
+```xml
 <Root>
   <Element attrib="My attribute value."/>
 </Root>
