@@ -1,7 +1,7 @@
 .gradle
-build/
-**/build/
-gradle-app.setting
-!gradle-wrapper.jar
-.gradletasknamecache
+**/build
+
 .idea
+*.iml
+*.ipr
+*.iws

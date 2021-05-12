@@ -1,4 +1,4 @@
-archivesBaseName = 'xml-helpers-sax'
+archivesBaseName = 'safexml-sax'
 
 repositories {
     mavenCentral()

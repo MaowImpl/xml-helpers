@@ -1,6 +1,46 @@
-allprojects {
-    apply plugin: 'java'
+plugins {
+    id 'idea'
+    id 'io.github.gradle-nexus.publish-plugin' version '1.1.0'
+    id 'com.github.hierynomus.license' version '0.15.0' apply false
+}
 
-    group = 'maow'
-    version = '1.0.0'
+allprojects {
+    group = 'io.github.maowimpl'
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+    apply plugin: 'signing'
+    apply plugin: 'com.github.hierynomus.license'
+
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+
+    license {
+        header = file('../LICENSE')
+        mapping {
+            java = 'SLASHSTAR_STYLE'
+        }
+    }
+
+    compileJava.options.encoding = 'UTF-8'
+
+    javadoc {
+        options.encoding = 'UTF-8'
+    }
+
+    java {
+        withJavadocJar()
+        withSourcesJar()
+    }
+}
+
+nexusPublishing {
+    repositories {
+        sonatype {
+            nexusUrl = uri('https://s01.oss.sonatype.org/service/local/')
+            snapshotRepositoryUrl = uri('https://s01.oss.sonatype.org/content/repositories/snapshots/')
+        }
+    }
 }

@@ -1,4 +1,3 @@
-rootProject.name = 'xml-helpers'
-include 'xml-helpers-dom'
-include 'xml-helpers-sax'
-
+rootProject.name = 'safexml'
+include 'dom'
+include 'sax'
