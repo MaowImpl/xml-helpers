@@ -10,11 +10,12 @@ This project includes multiple modules for different XML interfaces.
 
 ### To-Do:
 1. Finish SAX module.
-2. Supply modules with finished javadocs.
+2. Finish StAX module.
+3. Supply modules with finished javadocs.
 
 ## About Module: DOM
-DOM depends on DOM4J and includes helpful wrapper classes for null-safe manipulation of XML documents.<br>
-It handles all null-checking for you to reduce if statements and make DOM manipulation easier to read.
+DOM depends on DOM4J and includes wrapper classes for null-safe manipulation of XML documents.<br>
+It allows you to use fluent builder syntax that handles all null checking.
 
 ### Example
 
