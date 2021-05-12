@@ -2,11 +2,11 @@
 A set of utilities for safely and easily manipulating XML documents.
 
 ## About
-This project includes multiple modules for different XML implementations.<br>
-The main ones planned out are:
-* DOM (Document Object Model) - Almost finished.
-* SAX (Simple API for XML) - Hasn't started development.
-* StAX (Streaming API for XML) - Hasn't even gotten it's own subproject.
+This project includes multiple modules for different XML interfaces.
+
+* [DOM]   : Document Object Model
+* [SAX]   : Simple API for XML      *(Hasn't started development)*
+* [StAX]  : Streaming API for XML   *(Hasn't started development)*
 
 ### To-Do:
 1. Finish SAX module.
